@@ -1,0 +1,369 @@
+
+what is javascript object ?
+    - every javascript object has a prototype property , which makes the inherntce passiable in javascript
+    - the constorcotor prototype property is not the prototype of the constorcotor itself. its the property of all instance that are create 
+
+what is property chain ?
+    - when a certain method (or property) is called , the search start in the object itself and if it
+        can not be found , the search move to the object prototype.
+
+what is Filter pipe  ?
+    - when you try to search on the page 
+
+how to dubgging object ? 
+    - objectName.hasownproperty
+    - objectName.intanceof
+    - array.slice.call('box') ==> ES5
+    - array.from(box);
+
+what is object.create ?
+    - that allow us to implement a compliex inherntce in a easier way
+what is function ?
+    - we can store a function in a variable 
+    - we can return a function from a function
+    - we can pass function as an argument to another function
+
+what is IIFE function in ES5? 
+    - for data privacy if you do not want anyone change the data 
+        ex: (function () { var scare = math.random() * 10;console.log(scare >=5);})();
+    - we do not have to use in ES6 cuz, we can make the function privacy using block with let or const
+
+
+what is 3rd party packages ? 
+    - nodejs
+    - npm
+
+what is sprate oprater and rest oprater ?
+    - sprate: its use in the function .called => ES5
+    - rest: its use in the function dicration => ES6
+
+what is funaction constorcotor ? 
+    - className.Besoo = funaction () {} => ES5
+    - class dicration : class Bassam {constrctor (name,age) this.name=name; this.age=age;} => ES6
+
+what is static in javascript ?
+
+when we can use inherntce in javascript ? 
+    - when one object is based on another object
+    - when one object gets access to another object property and method
+why we use inherntce in javascript ? 
+    - to write less code 
+    - make more logical program 
+
+what is null means ? 
+    - null means there is no propertype
+what is AJAX ?
+    - asyncrous javascript and xml its allow asyncrous connect with remote service 
+
+what is Api ? 
+    - applaction programming interface
+
+what is closures ? 
+    - an inner funaction has always access to the variable and parameters of the outer funaction
+        even if outer funaction has returned 
+        ex: funaction Bassam (name) {
+            return funaction (name_p){
+                console.log(name_ + 'Hi');
+            }}
+        }
+
+what is the new feacher in ES6 ? 
+    - variable declartion with let and const ==> (let and const) its block scope i can not access it from outside the block
+    - block and IIFE , string
+    - arrays , sprate oprater
+    - rest and defult parameters
+    - map , class , sub-class
+    - prmises , native module
+    - arrow function
+    - its quite well supported in all modern browser
+    - fully supported in all browser today ==> ES5 to go back to ES5 use transpiling and polyfill
+
+why we learn ES5 ?
+    - many code online still in es5 
+    - when you work on old codebase , most will be es5 
+    - its better and easier to learn the es5 
+
+    - the variable hosted but, we still can not access them the outer error. in es5 undfind 
+        ex: console.log(x);
+            var x =5;
+
+what is lacexl this variable ?
+    - function that point globl 
+    - you can use var = this;
+    - you can use in the end of the funaction .bind(this)
+
+what is method porowing ?
+    - .call . applay . bind
+why we use module in javascript ? 
+    - each of module has variable and funaction are private only accessable id side of the module
+      no other code will overide your data.
+what is * {} in css ?
+    - called universal selector to select all the element 
+how to create class in javascript ?
+    - we can create instance in constrctor or property
+public method (data ecsapication) called API
+what is defult prametar ? 
+    - 
+what javascript compile to ? 
+    - C++ using nodejs  
+why javascript dose not has inherntce ? 
+    - javascript using prototype 
+
+what is the difference between let and var and const ? 
+- let will not override 
+- var will override
+- var not block scope its funaction scope
+
+what is template string in ES6 ? 
+    - `${}`
+    - startwith , endwith, include, repeat
+what is HTML element and attributes ? 
+    - element: link , paragraphs, images , section 
+    - attributes: class , ID source, alt
+
+what is the difference between ID and class  selector? 
+    - id has to be uniqe
+    - class 
+what is the strucature of the HTML ? 
+    - heder (addtinal info like title) and body (visable content)
+what is this keywoard ?
+    - point to the globl variable
+    - this keywoard not work with declartion funaction
+
+what is DOM ?   
+    - Document object model 
+    - representaion of an HTML Document
+    - use to connect web page to script langage 
+    - html web page content is stored in the DOM which can access by javascript
+what is scope chain ?
+    - each new function create a scope
+    - lexical scope get access to the scope of the outer(parent) funaction
+
+what is css override mganisem ? 
+what is defind and non-defined in javascript ? 
+what is clusure in javascript ?
+
+what is inline script? 
+    - we dont have to use addtinal file but, still better to use extrnal file cuz, nicely keep html, css , javascript
+      ex: <script src='main.js'></script>
+
+what is javascript ? 
+    - client-side , cross-platform , object-oriend computer program thats mean javascript dose not 
+        eat up much memory of the computer.
+why we use html, css ,js ? 
+    - to create interactive and dynmic we applaction
+    - css is presentation 
+what is primtive or non object data type ? 
+    - number , string, boolean, undfind, null
+    - the rest of it its object data type like array , function
+
+what is ternary oprater ?
+    - age >= 18 ? console.log('you can drink') : console.log('you can not drink');
+    - var ag = age >= 18 ? 'drink' : 'you can not drink';
+        console.log(ag);
+what is falsy value and truthy ? 
+    - falsy: undfind, null, 0 , nan
+    - truthy: not 
+what is the difference between = , ==, === ? 
+    - ===: its to see the type variable
+    - == its when try to compare to element 
+    - = when tried to sing or declar a variable
+
+what is execution context ? 
+    - creation phase
+        - variable object
+        - scope chain
+        - this variable
+    - the stack
+
+what is p5js and charjs?
+    - 3d libraly
+    - grapth
+
+
+what is hosting ? 
+    - is when you run the code before you declar it its work with just function dicration
+        ex of funaction dicration: Bassam(1994); funaction funaction Bassam (year){console.log(2020-year);}
+        ex of function exprtion: var Bassam = funaction (year);
+        ex of hosting : console.log(age);
+                        var age = 24; => the result will be undfind
+
+what is piece of code and globle context ? 
+    - piece: when call function calld execution stack its reuseable
+    - globle context: the code is not inside the funaction is exeuted its automaticly gets attaeched to the windos object 
+
+what is windos object ? 
+    - All global JavaScript objects, functions, and variables automatically become members of the window object.
+    - supported all browser
+
+
+var Bassam ['Bassam, 1994, Banawi'];
+var is = Bassam.indexof('Bassam') === ! ? 'true' : 'false';
+console.log(is);
+
+- object and properties code ex ? 
+    var nameL = promat ('what is ur name');
+    var app = {
+        name: nameL,
+        age: 24,
+
+        anothername: 'besoo',
+        cal: function(age){
+
+        } return age - 2020;
+    }
+
+    console.log(app);
+    console.log(app.age);
+    console.log(app.cal(22));
+
+var Bassam = new object();
+    Bassam.frist = 'Bassam';
+    Bassam.['lastname'] = 'banawi';
+    console,log(Bassam);
+
+what is typescript ? 
+    - its javascript supporset
+    - a language bulding up on javascript 
+    - has diffrent enviroment than javascript
+    - will run to javascript
+    - runtime error can be fixed before execution the script 
+    - have node package mnegaer
+    - to convarte it to javascript: npm install -g typescript => run: tsc main.ts
+
+supported tools in VS code ? 
+    - Eslint , material , icon theme , path lintelli, prettier-code ..,Tslint
+
+how to start project in typescript ?
+    - tsc --init if you have more than one file ts u want to convarte them to js 
+    - npm install --save-dev lite-server => to run on the server with no nodejs for testing 
+        run to convarte all ts file: tsc 
+    - tsconfig.json : lib , sourcemap ts rather than js "exclude":["ts"]
+what is tuple in typescript ? 
+    - its fix array ex: var mytuple = []; 
+                        mytuple[0] = 120 
+                        mytuple[1] = 234
+
+what is type com  typescript ?
+    - we cannot specify the type of a variable such as number, string, boolean ex: var age: number = 32; 
+
+what is union type in typescript?
+    - you can define a variable which can have multiple types of values ex: let myVar : string | number;
+
+what is enum typescript ? 
+    - new data type supported in TypeScript you do not have spsifie the data type 
+        - Numeric enum
+        - String enum
+        - Heterogeneous enum
+what is type function in typescript ?
+    - a function which accepts functions as parameters
+    - ex: interface Date {
+            toString(): string;
+            setTime(time: number): number;
+}
+what is type annotation in typescript ? 
+    - boolean , string , number , unknown 
+
+what is const and readonly ? 
+    - both has the same concept but, const used for variable type and readonly used for in properties
+
+what is opsinal type in typescript ? 
+    - name ? : string; ==> thats mean it may be string
+
+what is attribute value and property in html ? 
+    - attribute: When present in “text”, “password” and “hidden” it specifies the initial value of the input field. can not change 
+        ex: <input type"text">
+    - property: value property returns the value of the value attribute of a text field ex: document.getElementById("myText").value = "Johnny Bravo";
+what is angular ? 
+    - its fromework to build client-side app 
+    - its great for SPA => singl page applaction
+what is angular cli ? 
+    - its command line to start the project 
+    - npm install -g @angular/cli 
+    - ng new tes
+    - ng serve or npm serve 
+    - to add new component: ng g c fileName
+    - to add servics: ng g s fileName
+
+what is module in angular ?
+    - is a mechanism to group components, directives, pipes and services that are related
+    - is needed to be able to see the full picture.
+    - every angular has at lest one model called app or root 
+
+what is components and servics in angular ? 
+    - components: controll the view in the browser, binding and directives.
+        - template
+            -view 
+            -html 
+        - class 
+            -code 
+        - meataData
+            -info
+            -decorator 
+
+    - servics: some very useful functions. These functions can be invoked from any component (business logic)
+        to avoid do not repate your self. all the comment logic goes there.
+
+where is the angular dependcy, entry point , root module , root component? 
+    - dependcy: package.json
+    - entry: main.ts => the file that loading 
+    - root module: app.module.ts
+    - root component: app.component.ts
+
+what is the right sizees for css ?
+    - font-side: 15px; to 25px
+    - headLines: 60px to 90px
+    - per-line 45 to 90 char
+    - css: cascading style sheets 
+what is some important tags in html ?
+    - <u> : under line , <em> : ميلان , <strong> : تعيق , <br> : new line , <img src='' alt> : the img name
+      <a herf=''>: link , <a herf='www.google.com' target ='www'> : open new tab, width: 1140px;
+    <checked>, <texarea>
+
+when we should . and # ?
+    - .: with class selector
+    - #: with id selector
+
+what is properties and attribute in css  ?     
+    - properties: content , padding , margin , border , font-size, border-reiuds:50%
+    - attribute: altr type herf source
+
+what is block element and line element ?
+    - block element: full width of the browser
+    - line element: like img , em , strong ... 
+
+how to check the html file if there is any buges ? 
+    - validator.com
+    - gmaps.com
+
+how to make the html optimization ? 
+    - crap img to incrase the page speed 
+    - zip img 
+
+how to make your web-side responsive fromework? 
+    - using grid 
+    - flexible iamges 
+    - media queries 
+    - flex box 
+
+what is input type ? 
+    - text,name,id,placeholder,id 
+
+what is for keyword in css ? 
+    - 
+
+how to inherntce in css ?
+    - p { color: green; } the parent em the chiled ==> <p>This paragraph has <em>emphasized text</em> in it.</p>
+
+some important css code ? 
+    input [type = text],
+    input [type = email]
+    focuse {outline name;}
+    psttion absaloat ==> to make it - - - 
+    parent => posttion relative => to make it   -
+                                                -
+                                    
+    
+
+
+

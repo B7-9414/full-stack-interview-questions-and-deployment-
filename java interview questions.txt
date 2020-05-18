@@ -1,0 +1,709 @@
+what is the difference between arraylist and linked list ? 
+1) ArrayList uses a dynamic to store the elements. ex: if you want add element in between 3,4 will be slow ==> 2,3,4 and is updating the cpacity by it self in search element will be faster 
+   LinkedList uses a doubly to store the elements. oject has 2 node next and prives if i want to add new element in between will add object with no removing any element faster in search element will be slower the implementation from queue
+
+arraylist: dynamic
+array: fixed 
+
+what is the difference between treemap and hashmap ?
+HashMap implemented by Hash Table sorted not garnteed 
+TreeMap implemented by Red-Black tree sorted garnteed
+
+what is the difference between HashMap and HashTable ?
+HashMap:
+    its not thread safe and unsynchroized 
+    its fast
+    working with single thread
+    allow null key
+
+HashTable:
+    its thread safe and is synchronized 
+    its slow 
+    works with multiple thread
+    dose not allow null key 
+
+what is the difference between stack and linked list ?
+    Stack:
+          Last In First Out (LIFO) is class not interface 
+
+    LinkedList: 
+          works by storing the data and the addresses of other nodes
+
+implementation: 
+  Map ==> HashMap ==> HashTable
+  Map ==> LinkedHashMap (LinkedHashMap is HashTable and LinkedList)
+  Red-Black tree structure ==> TreeMap 
+
+  Ordering:
+   HashMap: Not garnteed Ordering on keys or values 
+   LinkedHashMap: will not order (if the user put 1 key will print 1)
+   TreeMap: garnteed ordering by the key
+
+ performance:
+    1. HashMap
+    2. LinkedHashMap
+    3. TreeMap
+
+Set and Map:
+    set:
+        1. can not duplicate elements 
+        2. an interface taht extends collection interface
+        3. store unique values 
+    Map:
+        1. An interface that maps unique keys to values
+        2. A separate interface
+        3. represents a maping between a key and values
+
+what is the difference between queue and stack in java ?
+
+    queue:
+         is interface extend from collection works according to the FIFO
+    stack: 
+        s that Stack is LIFO(Last In First Out) class not interface
+
+what is the difference between javascript and java
+        JavaScript:
+            javascript code is run on a browser only, is specifically an OOP scripting language.
+        java: 
+            Java is an OOP (object-oriented programming) language
+
+what is oops concepts in java ? 
+    Object, Class, 
+    Inheritance: resable => how to inheritance extend and implementation
+    Polymorphism: fixbility => how to inheritance extend and implementation, overreading
+    Abstraction , Encapsulation: security =>how to inheritance extend ==> Encapsulation: private and prodcuded
+
+what is some real life exsapile of oop ? 
+    - Inheritance: take something from parent class 
+    - Abstraction: index pages of the book (high level genetal view)
+    - Polymorphism: we all ppl everyone has different porsenalaty (mutable forms)
+    - Encapsulation: security things like waltes
+
+what is SDLC ?
+    - planning , anyalysis,design, implementation, testing 
+
+what is concurrent hashmap? 
+    - is a class data structure for ConcurrentHashMap is Hashtable.
+
+what is type casting ?
+    - Widening Casting =>  converting a smaller type to a larger type size ()
+    - Narrowing Casting => converting a larger type to a smaller size type ()
+
+what is autoboxing and instannceof ?
+    - conversion primitive types to object wrapper classes.
+
+what is float and intgerat data type ?
+    - float: dobule and float 
+    - intgerat: byt , char, boolean, long, int, short ==> they can not hold null value 
+
+what is wrapper class ?
+    - Integer , Long ==> can hold null value
+   
+
+Abstract classes and Abstract methods :
+
+    An abstract class is a class that is declared with non-access modifier in java
+    An abstract method is a method that is declared without an implementation.
+
+what is the difference between string and                                                                                                           buffer ?
+    String: class is immutable
+    StringBuffer(stringbuilder): class is mutable
+
+what is the difference between stringbuilder and stringbuffer ?
+    StringBuffer: 
+            thread safe 
+            synchronized
+            slow 
+    stringbuilder: 
+            not thread safe 
+            Asynchronized
+            faster 
+
+what is runtime and compiler time ?
+runtime : Anamil a = new Anamil();
+          Anamil a = new Dog(); in here dog is the abstract class dog the extend
+          1. reference variable point own class object ==> Heap
+          2. reference variable point chiled class object thats called upcasting ==> Heap
+          3. reference variable can not point to parent class object ==> Heap
+compile time : override and overreading 
+
+Polymorphism called many forms 
+
+what is compile time error : 
+    its syntax error ==> you can not be able to run the programming
+    missing braces , missing semicolon or 
+    print the value of variable without declear 
+
+what is runtime error : 
+    will compile but, you will have error ex, 20/0
+
+what is Collctions and generics :
+1. is interface come with 1.2, generics is to spsecfiy the array like <Integer> in 1.5 come generics ,
+     in 1.7 update the generics 
+2. if you know ur array fix go  with arraylist if you know ur array dicnamic go with Collctions
+
+ex. collection <Integer> a = new ArrayList<>(); ==> this > 1.7 
+ex. collection <Integer> a = new ArrayList<Integer>(); ==> this > 1.5
+
+ex. collection <Integer> a = new ArrayList<>(); ==> this collection keyword you can not spsecfiy the index
+ex. List <Integer> a = new ArrayList<>(); ==> this List keyword you can spsecfiy the index
+
+collection interface:
+    1. set interface
+        - sorted set interface
+            - navigable set interface
+                - tree set
+        - Hash set
+            LinkedHashset
+    2. List
+        - arraylist
+        - vector
+    3. Queue
+        - LinkedList
+        - priority Queue
+    
+Throwable class :
+    1. Exception 
+        - checked 
+            - IOException
+            - SQLException
+        - unchecked 
+            - RuntimeExcption
+                - ArithmeticExption
+                - fileNotFound Exception
+                - ArrayIndexOutOfBoundsExcption
+    2. Error 
+
+    what is try with Resources :
+        if you have buffer object or io reader object you do not have to use .close(); to do so just use try 
+        ex, try (BufferdReader br= BufferdReader(new InputStreamReader(System.in))){
+                String str = "";
+                str = br.readLine();
+        }
+
+what is stream api : 
+    stream api use in java 1.8 , lamnda exprtion
+
+what is the difference betwwen java 1.8(stream) and 1.7 :
+    1.8 ==> has defualt abstract mothed in the interface 
+            has static abstract mothed in the interface
+            you dont have to type public abstract void show(); u can just type void show();
+
+            foreach loop with lamnda exprtion (internal itration)
+            Consumer Interface
+            Method Reference ==> system.out::println
+
+what new in java 1.14 ?
+    - swich ststemnt with -> 
+    - String b = uparcase();
+
+what is inhands for loop foreach: 
+    for (int i : value )
+
+what is lifecycle thread :
+    - runable , runnig , waiting , terminated
+
+what is the difference between thread and runnable :
+    - runable: shares the same object to multiple threads.
+    - thread: thread creates unique object
+
+what is Thread synchronization :
+    - Threads should be synchronized to avoid resource conflicts make it in order or control the multiple threads 
+
+what is daemon thread and non-daemon thread: 
+    - non-daemon: what execute the front end logic of appltion 
+    - daemon: its the service thread will provide service it will give support
+        if non-daemon has been compleated the jvm will stop the daemon thread.
+
+what is the lifecycle of jdbc ?
+    - load JDBC Driver
+    - open database connection
+    - create a statement,prepred statement , Callable statement
+    - Execute SQL queries 
+    - the results of SQL queries
+    - close database connection
+
+what is callable statement jdbc ? 
+ - is used to execute SQL stored procedures
+
+what is jdbc resultset ? 
+    -  is a Java object that contains the results of executing an SQL query
+
+what is prepared statement jdbc ?
+    -  is one of several ways to execute SQL queries using JDBC API
+
+what is interface in java ? 
+    - support multiple inheritance
+    - dose not contains Data Member like public int y = 0;
+    - dose not contains constractor like myclass() "{system.out.println"hi from another class"}
+    - just contains incompete Member or signature of Member incompete like public abstract void sound();
+    - cannot have access modifier by defualt everything is public in java 7
+    - can not be static in java 7
+what is OAuth2 vs JWT?
+    - OAuth2 signatures are not required for the actual API calls once the token has been generated. 
+        It has only one security token.
+    - ex: when try to use facebook data or login 
+    - JWT : who doing OAuth(inside) is JWT to generate key . jwt is part of OAuth
+
+what is Jenkins , JHipster google, aws , openShift and Heroku?
+    - Jenkins: checks your code out of a repository, builds and packages it, and dumps it out to a server so you can test it  using yaml 
+    - JHipster: Deploy microservices with angular 
+    - openShift and Heroku: its esay to Deploy project 
+
+what is OAuth vs Auth ?
+    - OAuth: when try to use some of the facebook data like username of person or facebook login page 
+    - Auth: when try to secure your web. using basic Auth login 
+
+what is the OAuth2 vs OAuth ?
+    - OAuth: let say 8 ways to use OAuth in here. OAuth 1.0 Access tokens could be stored for a year or more (Twitter never let them expire).
+    - OAuth2: here 6 wayes. OAuth 2.0 Access tokens are "short-lived". Typically,
+what is SSo ? 
+    - SSO: one time login to the application
+
+what is CQRS Pattern?
+    - CQRS : when you have monay ppl want the same sourse or data like book flight.
+
+why we use Spring Cloud Stream with kafka or RabbitMQ ?
+    - Spring Cloud Stream provides multiple binder implementations such as Kafka, RabbitMQ 
+    - when try to change kafka to RabbitMQ you will just change the depancy
+
+zookeeper-server-start.bat C:\Program Files\kafka_2.12-2.1.0\config\zookeeper.properties
+kafka-server-start.bat C:\Program Files\kafka_2.12-2.1.0\config\zookeeper.properties
+ what is kafka ?
+     - kafka is a queue system
+     - one database to read and on database to write like filght booking 
+     - based on publisher and subscriber using mqqt also based on consumers group
+     - inside kafka cluster we have kafka broker . inside kafka broker we have topic and unside topic we have partition
+     -  A Kafka broker allows consumers to pull topic, partition
+     - to share kafka cluster we should use zookeeper ex: you want to share some topic between topics or 
+     - A Kafka broker allows producer to push topic, partition
+        partition in the same cluster we should use zookeeper like RestTemplate in microservices maneage our topics and partition
+     - kafka suport order of massage
+     - kafka does not suport filters broker
+     - kafka broker store the massage for spsecfic period of time whethrer the massage has picked up on not by consumers
+     - kfka the Consumer can pull the massage from the broker 
+
+ what is JMS ?
+    - smaller to kafka the difference is :
+       - jms dose not suport order of massage
+       - jms suport filters broker
+       - jms broker store the massage either in memory or disk or storage 
+       - jms the provider (consumers) can push the massage to topic or queue
+
+  what is RabbitMQ ?
+    - another massageing tool like kafka or jms 
+    - using exchange and queue term
+
+what is axon ?
+    - axon aframework smaller to kafka and another framework
+    - application architecture pattern most commonly used with event sourcing like booking to order them in queue
+    
+what is spring amqp ? 
+    -  is the Spring implementation of AMQP-based messaging solutions
+what is DDD ?
+    - it just the way to thing how design your program its busnes 
+
+what is Keycloak ?
+    - is an open source identity and access management solution.
+    - to do admin role sso 
+
+what is Elastic search (ELK stack) ?
+    - linkedln and facebook using Elasticsearch is no sql database bases on search engine
+    - if you are looking for full package will use (ELK stack ) will come with 
+        kibana to give the dasboard ui layer to monitor applction log of Elasticsearch and logstash to give you the log pipelin tool that accsept input logs
+
+what is spring cloud task ?
+    - when try to track the user 
+    - RestFul is synchronous shoud be wait 5 secound to get the response, when you use task will be asynchronous
+    - Spring Cloud Task is to provide the functionality of creating short-lived microservices for Spring Boot application.
+
+what is microservices vs Monolith ?
+    - 
+
+what is (Spring Cloud Data Flow and stream processing all using kafka) or (Spark ecosystem )?
+    - to give real-time data 
+    - anyalysis data 
+    
+what is abstract in java ? 
+    - dose not support multiple inheritance
+    - dose contains Data Member like public int y = 0;
+    - dose contains constractor like myclass() "{system.out.println"hi from another class"}
+    - can contains access modifier for sub class 
+    - complete Member of abstract class can be static like
+         abstract class Foo {
+             static void bar() { }} 
+
+what is static class, static mothed, Static blocks(initialization) and static variable in java ? 
+    - static class (inner or Wheel): way of grouping classes together in Java
+                    like: public class CarParts {
+                            public static class Wheel {
+                             public Wheel() {
+                                System.out.println("Wheel created!");}} ==> when call the object in main CarParts.Wheel wheel = new CarParts.Wheel();
+
+    - static method: can access only static data , can call only other static methods and can not call a non-static method
+                     like: public static void Test (int x) {if(x == 0) system.out.print("is 0");}
+
+    - static blocks: that is run only once when a class is loaded into memory
+                     like: static {System.out.println("Test");}
+
+    - static variable:Static variables are initialized only once, at the start of the execution 
+                    like: static int y = 0; or private static int Test;
+
+what is Instance Variables and Instance methods (non-static) ? 
+    - Instance Variables: like: private int test; ==> inside the class 
+    - Instance methods: like: public void test(){} ==> everything inside 
+
+what is inner mothed in java ? 
+    - An anonymous inner class can be useful when making an instance of an object 
+    - class without name
+    - mothed inside the object 
+
+what is jsp and servlet in java?
+    - JSP is a webpage scripting language that can generate dynamic content.acts as a view 
+    - Servlets is the frist web tochnology for java ,
+         is java object that responds to HTTP requests, 
+         is part of java web appltion, 
+         java servlet runs inside a servlet Containar such as tomcat acts as a controller
+         if you want to use servlet you should extend httpservlet @webserverlet
+
+what is encapsulation in java?  
+    -  is defined as the wrapping up of data under a single unit. 
+    -  It is the mechanism that binds together code and the data
+    -  like: public , private , prodcuded , and defualt 
+
+what is spring cloud feign and ribbon client؟
+    - Ribbon is a client-side load balancer that gives you a lot of control over the behavior of HTTP and TCP clients.
+         Feign already uses Ribbon, so, if you use @FeignClient , this section also applies
+
+what is access modifier ? 
+    - public : you can access it from Class , package , subclass , global
+    - private : you can just access it from Class
+    - prodcuded : you can access it from Class , package , subclass
+    - defualt: you can just access it from Class , package 
+
+what is polymorphism in java? 
+    - compile time : 
+        - method override: same mothed and same parameters      
+                           allows chiled(subclass) implementation of super-classes (parent)  
+        - method Overload:  have the same name, but different signatures or parameters
+    - run time :
+        - virtual function:  type of reference (or pointer) used for function call.
+
+what is java enterprice ? 
+    - JDBC , J2E
+
+what is the difference between framwork and libraly ? 
+    - libraly: re-useable , full ollcation of libraly
+    - documentation , structure your code
+
+what is Local variable and Instance variable ? 
+    - Local: is in scope {} and they are not visible(accessible) outside
+    - Instance : are visible on all part of code based on there access modifier
+
+What is “this” keyword in java?
+    - is a reference variable refer instance variable of current class
+
+Can we Overload or Override static methods in java ? 
+ - Answer is, No, you can not override static method in Java
+ - can declare method with same signature in sub class
+
+what are the features in java 9 ? 
+    - JShell(REOL)
+    - defined private mothed
+
+what are the features in java 10 ? 
+    - var keyword
+why we use thread in java ? 
+    -  helps in running the tasks in parallel
+    -  to make Java application faster by doing multiple things at same time
+
+what is the difference between object and class in java ?
+    - class : A class is a template
+    - object: is a member or an "instance" of a class
+
+what is the difference between object and constractor in java ? 
+    - Constructor is used to initialize an object,Constructors are invoked, Constructor does not return any value
+    - Object is used to call method, whereas constructor is used to define a method.
+   
+
+what is final variable  and final class ? 
+    - A final class cannot be extended(inherited)
+    - final is a non-access modifier , its value can't be modified,constant
+
+what is stringtokenizer in java ?  
+    - its like split() but, tokenizer more much better 
+    - class allows an application to break a string into tokens
+
+what is servlet lifecycle ? 
+    - init()
+    - service()
+        - Doput
+        - Dopost
+        - Dodelete
+    - destory
+
+what is servlet context ? 
+    - s an interface which helps to communicate with other servlets.
+    - create when you start the web app 
+
+what is servlet config ? 
+ - object containing some initial parameters or configuration information created by Servlet
+
+what is response status ? 
+    - 200: success
+    - 404: not found 
+    - 400: bad requests
+    - 401: un-Auth
+    - 500: server error
+
+what is the difference between autowired and qualifer annotations ? 
+    - autowired: scan for @components 
+    - qualifer: to spsecfiy the implementation using with autowire if you have multiple implementation java which one 
+                will pick thats why we useing @Qualifer("interfaceClassNameWithfristCharSmallLiter") with @autowire
+
+what is bean @scope("prototype") and @scope("singleton")? 
+    - prototype: create new object every time 
+    - singleton: to share object or same refrance
+
+what is postconstruct and predestory annotations ? 
+    - @postconstruct: code will execute after injected it
+    - @predestory: code will execute before bean is destory
+
+what is bean lifecycle ? 
+ - bean instantiated 
+ - dependencies injected 
+ - internal soring processing 
+ - custom init method 
+
+what type of injection spring use like autowire ? 
+    - constractor injection
+    - setter injection
+    - field injection
+
+what are the ways to configspring container ?
+    - full xml config 
+    - xml component scan makes the xml  littel bit short 
+    - java configuration class @configuration will not use xml at all
+
+development process configuration with no xml ?
+    - @configspring
+    - @componentScan("packeage");
+    - read java configuration class 
+        ex: annotationConfigApplicationContext context = new annotationConfigApplicationContext
+            (SportConfig.class);
+    - retrieve bean from spring container
+
+define spring beans development process with no xml ?
+    - defind method to expose bean ex: @Bean no @componentScan => bean behind the seen is singleton by defualt
+    - inject bean dependencies ex: @ ==> the method name will be the bean id when spring ragtire the bean in the configuration
+    - read spring java configuration class
+        ex: annotationConfigApplicationContext context = new annotationConfigApplicationContext
+            (SportConfig.class);
+    - retrieve bean from spring container
+
+what is propertysource and value annotations ? https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html
+    - load the prpps file 
+        ex: @PropertySource("classpath:bassam.properties")
+    - in properties file : person.name=bassam
+                           person.email=b.b.a.1415
+    - @Value to read them using filed inject ex: @Value("${person.name}") ==> spring 4 or higher remove @value
+                               private String name;
+what is controller annotations ?
+    - its inheritance from @component cux, support secaning 
+
+how to pass pram from controller to jsp ? 
+    - addAttribute mothed ex: model.addAttribute("massage"); ==> in jsp ${massage}
+    - getParameter("students") ==> in jsp ${pram.students} or @resqutparam
+    - @ModelAttribute("students") ==> in jsp ModelAttribute="students">
+
+what is mvc form validation ?(its good to use wrapper in the private xuz, accept the null)
+    - its an api use in jsp to add reqired or max , min 
+        ex: @NotNull ==> reqired username 
+            @Size => (min=1, massage"is reqired") => at lest one char
+            @Valid => valid rule
+            @max
+
+what is InitBinder annotations ?
+    - its works as pre-processor 
+    - will remove all white spase from the console thats if you want print sumitt form on the console will be alot of white spase thats why we using @InitBinder
+    - we should add @InitBinder with method to remove all white spase
+
+regular expression in java ?
+    - mach two string ex: @Pattern(regexp="[a-zA-Z0-9]{5}")
+
+what is custom validation ?
+    - to start password with Bas ... if the password not start with those char will give error when sumitt the form
+    - also u can add custom annotations like @Bassam
+
+what is hibernate ? 
+    - its framework to handel all of the low-level SQL
+    - provide the object-to-relational mapping (ORM)
+
+what is the difference between @OneToOne(mappedby="Bassam1",cascade=CascadeType.All) and  @OneToOne(cascade=CascadeType.All)//bassam2
+- mappedby called  bi- directional: Bassam 1 want to conect with the (foreign key) Bassam 2  عكس
+- if you dont use @OneToOne(mappedby="Bassam1") will bassam 2 conect bassam 1
+- if you want delete just one row in one table rather than 2 tables using foreign key u should change the CascadeType.All to 
+  DETACH,MERGE,PERSIST and REFRESH
+- do not use cascade with @OneToMany and @ManyToOne with delate 
+
+what is the difference between Fetch data using Eager and Lazy ?
+    - Eager: will retrieve everything
+    - Lazy: will retrieve on request 
+    
+     
+what is ioc(inversion of Control )and dependency injection in spring ?
+ - Dependency Injection: can be done by setter injection or constructor injection, filed injection
+ - ioc: is shifted from our application code to the Spring container ==> so u dont woory about constractor and other things 
+ ioc will handel it for u by create an depancy and will add it in the container
+ - bean and component: all most the same registor target type in Spring container.
+
+what it's c3po library spring ?
+    - c3p0 is a Java library that provides a convenient way for managing database connections
+
+what is Jackson ?
+    - to handel data binding between JSON and java POJO 
+    - just call the setter mothed => from JSON to java POJO
+    - just call the getter mothed => from java POJO to JSON
+    - all this happen or handel jackson with restcontrooler 
+
+what is the difference between controller advice annotations and exption handel annotations?
+    - @ControllerAdvice: is globl exption => AOP
+    - @ExptionHandel : not global execute you can use evey class
+
+what is aop(pointcut expression) and aspectj in spring ?
+     - pointcut: declare once and then use it rather than use @before alot 
+     
+what is @GeneratedValue(strategy=GenerationType.IDENTITY)
+    - is to generate or decremental the primary key
+
+what is @JoinColum(name="instrocator_id") ?
+    - if you want to join two table togather using foreign key 
+
+what is spring Data jpa ?
+    - its framework to give you the CRUD like find,delete
+
+what is Ribbon client and hystrix (circuit breaker) ?
+    - Ribbon : to handel the loadbalance in eureka server , comeing request
+    - hystrix: if the loadbalance too much of request will broke so we will use hystrix to handel it like to redirect 
+        trhe user to another page. and then will hystrix sleep 60 to solve the problem 
+
+what is Splunk Cloud  and papertrail and logstash(Elasticsearch)?
+    - Splunk Powerful log analytics  , is the industry's only enterprise-ready cloud service for machine data
+    - this all tooles will search in the loges 
+    - ex: if you have alot of microservices and you to see each macrioservice logs or search 
+
+what is kubernetes ?
+    - Build, Deploy, And Scale Kubernetes With Speed And Efficiency.
+         Open Source Containerization And Microservices Solutions For Enterprise App Developer by google 
+    - like vm in google and docker => docker smaller to kubernetes
+    - devoobs
+
+some info ?
+   - target > java -jar  ./test.war 
+   - i can run the war in sts 
+   - keytool -genkeypair -alias baeldung -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore baeldung.p12 -validity 3650
+
+what is git ?
+    - version control system it localy track change in ur project like bitBuket, github , gitlab those are servicse allow to host your project 
+        remotly also help in SDLC and CL, CD 
+    - CL: continuous integration that devloper push the code to github 
+    - CD: continuous devliery and Deployment that Jenkins will automated pull , bulid , test and Deploy it 
+
+what is different between vm and cloude compute  ?
+    - vm like laptob hardware from physical machine
+    - compute engine its machine on the fly conctect remotly 
+         ex: PaaS platform as service oprateing system javaEE or SaaS softwaer as service only functionality
+
+what is Zipkin and Sleuth ?
+    - Sleuth is a distributed tracing system to generate trace id and span id => each macrioservice has own trace id. span id will be change.
+    - Zipkin server is rather than see the trace on the console zipkin will handel all the microservices with trace id and span id in the ui
+
+what is zuul serevr (proxy, gateway) and eureka (consul)?
+    - eureka: netfilx discovery server in spring boot in order to see all register url 
+    - zuul: its to control the microservices you will have one gateway to handel all microservices
+    
+what is spring boot admin server (will be in --v 1.5.15) ?
+    - web application, used for managing and monitoring Spring Boot applications.
+    - all macrioservice and discovery server and distributed system will register in there 
+
+what is RestTemplate and Feign framework webclient?
+    - RestTemplate: to comencate between microservices like get some data from another microservices, will not give the loadbalance by defualt
+    - Feign: to comnecate between microservices like get some data from another microservices, will give you the loadbalance by defualt
+    
+what is Reactive or Spring Webflux ?
+    - is parallel version of Spring MVC and supports fully non-blocking reactive streams
+    - will open theread for open connection betten client and database 
+    - repo will be ReactiveMonogoRepo
+    - flux use FindAll , mono (ComplateFuture) with findbyid or findby.. 
+    - live list of value you will @Getmapping(/test, produces="text/event-stream") => public Flux<User>getAll()
+    - list of value you will @Getmapping(/test) => public Flux<User>getAll() => test.subscrib(Repo::save)
+
+what is power bi ?
+    - for data anyalysis and busniess ppl who want to desing thier data and put like digrams 
+
+what is sprint boot DavTools ?
+    - if you add it in the pom.xml will not have to restart your project everytime 
+    
+what is the difference between sesstionFactory and Session in hibernate ?
+    - sesstionFactory: read the hibernate config to create Session havy load using once 
+    - Session: wrapper a jdbc connection its an object to use 
+
+
+vistor and analytics api or google api ?
+    - http://www.freevisitorcounters.com/
+    - firebase
+    - google analytics
+    - google speech : https://github.com/goxr3plus/java-google-speech-api/tree/master/src/test/java/translator 
+    - google translate : https://github.com/goxr3plus/java-google-translator
+    - 
+
+How to create custom annotations ?
+    - @Constraint (validatedBy = theBussinseLogicClassNameAny.class)
+      @Target ({ElementType.METHOD, ElementType.FIELD})
+      @Retention (RetentionPolicy.RUNTIME)
+      public @interface Bassam {
+          public String value() defualt "Bas";
+          public String message() defualt "you must use Bas in frist";
+      }
+
+public class theBussinseLogicClassNameAny 
+	implements ConstraintValidator<Bassam, String> {
+
+	private String coursePrefix;
+	
+	@Override
+	public void initialize(Bassam theCourseCode) {
+		coursePrefix = theCourseCode.value();
+	}
+
+	@Override
+	public boolean isValid(String theCode, 
+						ConstraintValidatorContext theConstraintValidatorContext) {
+
+		boolean result;
+		
+		if (theCode != null) {
+			result = theCode.startsWith(coursePrefix);
+		}
+		else {
+			result = true;
+		}
+		
+		return result;
+	}
+}
+
+
+
+aws regin ?
+    - https://aws.amazon.com/ar/about-aws/global-infrastructure/
+rote 53 ?
+    - to get domin aws
+
+to add ssl ?
+    - namechecp u should have cPanel
+    - u can add ssl to tomcat server
+    - zero ssl 
+
+ssl aws ?
+    - ssl maneager

@@ -1,0 +1,35 @@
+what inner join and outer join in sql ?
+what is sub-table in sql and view ?
+what is the difference between table and tab table ?
+what is the difference between unoin and unoin all ? 
+what is what is dml query ? 
+what is table lack ? 
+
+what is Data Containar and code Containar ? 
+Data Containar :
+- view
+    - table 
+    - temp table 
+
+code Containar:
+- stored procedures
+- function 
+- sub-queries
+
+what is the difference between like and in and as in sql ?
+    - Like operator is used to search a particular string
+    - IN allows you to easily test if an expression matches any value in a list of values
+    - AS command is used to rename a column or table with an alias
+
+- project manager: just manage the porject like dateline 
+- team lead : who role waterfull or Agil
+
+what is Execution plans is sql ?
+ - graphically display the data retrieval methods chosen by the SQL Server Query Optimizer
+
+what is autocomplete in css ? 
+
+what is the difference between temp and view is sql ?
+    - temp table is a base table that is not stored in the database
+    - view is not stored with data but with a query that will retrieve data
+

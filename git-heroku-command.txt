@@ -1,0 +1,49 @@
+github :
+cd fordername 
+git init 
+git add .
+git commit -m ""
+git remote add anyName linkRepo 
+git remote -v 
+git push -f github branchName 
+
+github branch :
+git init 
+git add .
+git commit -m ""
+git remote add anyName linkRepo 
+git remote -v 
+git branch 
+git branch anyName
+git checkout branchName
+git push -f github branchName 
+
+
+tomact: 
+startup 
+shutdown
+
+jenkins: 
+http://localhost:8080/restart 
+
+heroku setup once: 
+heroku --help 
+heroku login
+heroku create
+heroku apps:rename --app evening-chamber-94474 heroku-bassam 
+git init
+git add . 
+git commit -m ""
+git remote add heroku https://git.heroku.com/heroku-bassam.git 
+or  hreoku git:remote -a "spring-boot"
+git push heroku master 
+heroku logs or heroku logs -t 
+
+hreoku change:
+// install heroku postgrs for database for free 
+// in proprites add : spring.jpa.hibernate.ddl.auto=create-drop
+after change! new push
+git add . 
+git commit -m "add db"
+git remote add heroku https://git.heroku.com/heroku-bassam.git 
+git push heroku master 
